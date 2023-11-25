@@ -8,6 +8,7 @@
     --text-light: #6b7280;
     --extra-light: #faf5ff;
     --max-width: 1200px;
+    --light: #ffffff;
 }
 
 * {
@@ -29,7 +30,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color: var(--light);
     z-index: 99;
 }
 
@@ -89,6 +90,23 @@ ul li a:hover {
     border-bottom-color: var(--secondary-color);
     color: var(--secondary-color);
 }
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+
+}
+
+.dark_mode {
+    --text-dark: #e0e0ed;
+    --extra-light: #19181a;
+    --light: #040404;
+}
+
+/* nav ul {
+    flex: 1;
+    text-align: right;
+} */
 
 .section {
     background-color: var(--extra-light);
